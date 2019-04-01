@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
   spec.framework    = 'Foundation', 'UIKit', 'Security'
   spec.requires_arc = true
   spec.dependency 'UICKeyChainStore', '~> 2.1.0'
+  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
   spec.ios.deployment_target = '5.0'
   spec.tvos.deployment_target = '9.0'
